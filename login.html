@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/cfc06d4855.js" crossorigin="anonymous"></script>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        font-family: Century Gothic;
+    }
+    a{text-decoration: none;}
+    header{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(mainhouse.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position:center;
+    }
+    .main ul{
+        float: right;
+        list-style-type: none;
+        margin-top:50px;
+    }
+    .main ul li{
+        display:inline-block;
+    }
+    .main ul li a{
+        border-radius: 4px;
+        color: #fff;
+        padding:5px 20px;
+        border: 1px solid transparent;
+        text-decoration: none;
+        transition: 0.6s ease; 
+
+    }
+    .main ul li a:hover{
+        background-color: #fff;
+        color:#000;
+    }
+    .main ul li.active a{
+        background-color: #fff;
+        color:#000;
+    }
+    .logo img{
+        float: left;
+        width: 500px;
+        height: auto;
+    }
+    .main{
+        max-width:1400px;
+        margin: auto;
+    }
+    .log-in {
+        position:absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height:10px;
+        
+    }
+    .log-in ul li{
+        text-decoration: none;
+    }
+    input{
+        width:380px;
+        height:40px;
+        font-size:20pt;
+        text-align: center;
+    }
+    input[type=email],[type=password]{
+        border:1px;
+        outline:none;
+        background:none ;
+        color:white;
+        border-radius: 8px;
+    }
+    input[type=email]:hover,[type=password]:hover{
+        background-color: white;
+        color: #000;
+        border-radius: 8px;
+        transition: 0.6s ease;
+    }
+    input[type=submit]{
+            background: none ; 
+            outline:none;
+            height: 50px; 
+            color: #fff; 
+            font-size:15pt;
+            border-radius: 8px;
+        }
+    .find{
+        position:absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height:10px;
+        list-style-type: none;
+    }
+    .find ul{
+        display:inline-block;
+        width:380px;
+        height:40px;
+        font-size:13pt;
+        text-align: center;
+        color:white;
+    }
+    .find ul li{
+        display:inline-block;
+        cursor:pointer;
+    }
+    .find ul li a{
+        color: #fff;
+        border:none;
+        text-decoration: none;
+    }
+ 
+</style>
+</head>
+<body>
+    <form name="LogIn_Form" action="login.jsp" method="post">
+    <header>
+        <div class="main">
+            <div class="logo">
+                <a href="hp.html"><img src="logo.png"></a>
+            </div>
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="shop2.html">SHOP</a></li>
+                <li><a href="magazine.html">MAGAZINE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="login.html">LOG-IN</a></li>
+            </ul>
+        </div>
+        <center>
+            <div class="log-in">
+                <ul>
+                    <li><input type="email" name="email" placeholder="이메일"></li><br><br><br>
+                    <li><input type="password" name="pw" placeholder="비밀번호"></li><br><br><br><br>
+                    <li><input type="submit" name="로그인" value="로그인"></li>
+                </ul>
+            </div>
+            <div class="find">
+                <ul>
+                    <li>아이디 찾기&nbsp;&nbsp;</li>
+                        <li>|</li>&nbsp;&nbsp;
+                        <li>비밀번호 찾기</li>&nbsp;&nbsp;
+                        <li>|</li>&nbsp;&nbsp;
+                        <li><a href="signup.html">회원가입</a></li>
+                </ul>
+                <br>
+                <ul>
+                    <i class="far fa-kiss-wink-heart" style="font-size:20pt";></i>&nbsp;
+                    ID: asdf@asdf&nbsp;&nbsp; PW: asdf&nbsp;
+                    <i class="far fa-kiss-wink-heart" style="font-size:20pt"></i>
+                </ul>
+                </div>
+            </center>
+        </header>
+    </form>
+</body>
+
+</html>
